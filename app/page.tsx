@@ -27,12 +27,13 @@ export default function Home() {
           quality={100}
           fill
           sizes="200vw"
-          className="absolute inset-0 bg-gradient-to-r from-blue-900/50 via-transparent to-purple-900/50 opacity-10"
+          className="opacity-20"
           style={{
             objectFit: "cover",
-            backdropFilter: "blur(60px)",
+            // backdropFilter: "blur(60px)",
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50/60 to-pink-100/90"></div>
       </div>
       <main className="relative font-poppins font-medium text-primary-light">
         <nav className="flex justify-between m-10 sticky z-50">
