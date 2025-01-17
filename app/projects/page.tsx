@@ -1,10 +1,16 @@
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
-      <h1 className="m-6 font-poppins font-light">Welcome to our projects</h1>
-    </div>
+    <>
+      <Navbar />
+      <h1 className="m-6 font-poppins font-light">
+        Welcome to our projects page
+      </h1>
+      <Footer />
+    </>
   );
 };
 
