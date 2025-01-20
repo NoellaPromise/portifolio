@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import BG from "@/public/Images/grid3.jpg";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +23,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}  antialiased`}>{children}</body>
+      <body
+        className={`${poppins.variable}  antialiased relative min-h-screen font-poppins font-medium text-primary-light`}
+      >
+        <div className="fixed inset-0 -z-10">
+          <Image
+            alt="background"
+            src={BG}
+            placeholder="blur"
+            quality={100}
+            fill
+            sizes="100vw"
+            className="opacity-20"
+            style={{
+              objectFit: "cover",
+            }}
+          />
+           <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50/60 to-pink-100/90"></div>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

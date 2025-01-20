@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div >
       <Navbar/>
-       <h1 className="m-6 font-poppins font-light">Welcome to the About page</h1>
+       <h1 className="m-6">Welcome to the About page</h1>
        <Footer/>
     </div>
   )

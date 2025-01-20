@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <h1 className="m-6 font-poppins font-light">
+      <h1 className="m-6">
         Welcome to our projects page
       </h1>
       <Footer />
