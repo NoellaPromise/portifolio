@@ -1,8 +1,8 @@
 "use client";
-import MenuIcon from "@/public/Icons/menuIcon";
 import StarIcon from "@/public/Icons/starIcon";
 import Link from "next/link";
 import { useState } from "react";
+import {Menu} from "lucide-react"
 
 const navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const navbar = () => {
           onClick={toggleMenu}
           className="lg:hidden text-gray-900 focus:outline-none z-50"
         >
-          <MenuIcon />
+          <Menu size={32}/>
         </button>
 
         <div

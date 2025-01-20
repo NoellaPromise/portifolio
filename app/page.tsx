@@ -1,6 +1,6 @@
 import Link from "next/link";
-import RightArrow from "@/public/Icons/rightArrow";
-import Text from "@/public/Icons/text";
+import {ArrowRight} from "lucide-react";
+import Text from "@/components/text";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
               href="/about"
               className="animate-[moveArrow_1s_ease-in-out_infinite]"
             >
-              <RightArrow />
+              <ArrowRight />
             </Link>
           </div>
           <Footer />
