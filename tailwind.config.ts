@@ -11,18 +11,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary:{
+        primary: {
           light: "#4a4848",
           dark: "#ffffff",
-        } ,
-        secondary:{
+        },
+        secondary: {
           light: "#000000",
           dark: "#ffffff",
         },
         background: {
-          light: '#ffffff',
-          dark: '#182a38',
-        }, 
+          light: "#ffffff",
+          dark: "#182a38",
+        },
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
