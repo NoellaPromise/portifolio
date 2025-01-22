@@ -27,7 +27,7 @@ export const AboutSection = ({ title, content, link }: AboutSectionProps) => {
         </div>
       </div>
 
-      {isOpen && <p className="leading-relaxed pl-4">{content}</p>}
+      {isOpen && <p className="leading-loose pl-4">{content}</p>}
     </div>
   );
 };
