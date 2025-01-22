@@ -2,11 +2,12 @@
 import StarIcon from "@/public/Icons/starIcon";
 import Link from "next/link";
 import { useState } from "react";
-import {Menu} from "lucide-react"
+import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navbar = () => {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -31,7 +32,7 @@ const navbar = () => {
           onClick={toggleMenu}
           className="lg:hidden text-gray-900 focus:outline-none z-50"
         >
-          <Menu size={32}/>
+          <Menu size={32} />
         </button>
 
         <div
@@ -49,15 +50,19 @@ const navbar = () => {
           `}
         >
           <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {navItems.map((item) => {
+            {navItems.map((link) => {
               return (
                 <Link
-                  key={item.href}
-                  href={item.href}
-                  className="hover:underline hover:decoration-blue-950 hover:underline-offset-6"
+                  key={link.href}
+                  href={link.href}
+                  className={`hover:text-black ${
+                    pathname === link.href
+                      ? "text-black font-bold underline underline-offset-4"
+                      : "font-medium text-primary-light"
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.label}
+                  {link.label}
                 </Link>
               );
             })}
