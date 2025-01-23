@@ -39,7 +39,7 @@ export default function RootLayout({
               objectFit: "cover",
             }}
           />
-           <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50/60 to-pink-100/90"></div>
+           <div className="absolute inset-0 bg-gradient-to-br from-pink-100/90 via-blue-50/50 to-pink-100/90"></div>
         </div>
         {children}
       </body>
