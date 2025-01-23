@@ -3,7 +3,7 @@ import { Gitlab, Github , Linkedin,Instagram} from "lucide-react";
 
 const footer = () => {
   return (
-    <div className="flex gap-12 mb-8">
+    <div className="flex gap-12">
       <Link
         href="https://gitlab.com/dushakenoella"
         className="hover:text-[#182a38] hover:scale-110"
