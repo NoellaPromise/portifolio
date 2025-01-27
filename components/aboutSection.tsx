@@ -1,5 +1,5 @@
 "use client";
-import { AboutSectionProps } from "@/lib/interfaces";
+import { AboutSectionProps } from "@/lib/aboutSection";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
