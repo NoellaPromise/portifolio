@@ -21,7 +21,7 @@ const page = () => {
                 Projects
               </Link>
               <Link
-                href="/projects"
+                href="https://www.instagram.com/noella_promise/?hl=en"
                 className="hover:scale-110 hover:underline underline-offset-4 hover:font-bold"
               >
                 Videos
@@ -38,7 +38,6 @@ const page = () => {
               title={project.title}
               description={project.description}
               technologies={project.technologies}
-           
             />
           ))}
         </div>
