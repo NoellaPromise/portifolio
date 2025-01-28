@@ -44,7 +44,7 @@ const page = () => {
         </div>
       </div>
       <div className="flex gap-3 max-w-4xl mx-auto p-8 ">
-        <Link href="/projects" className="hover:underline">
+        <Link href="/resume" className="hover:underline">
           Let's Go To My Resume
         </Link>
         <Link
