@@ -1,5 +1,7 @@
+import { StaticImageData } from "next/image";
+
 export interface ProjectsProps {
-  image: string;
+  image: string | StaticImageData;
   link: string;
   title: string;
   description: string;

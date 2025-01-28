@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-const navbar = () => {
+const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -73,4 +73,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
