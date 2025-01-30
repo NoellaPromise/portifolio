@@ -8,38 +8,41 @@ import { AboutSection } from "@/components/aboutSection";
 
 const page = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="max-w-4xl mx-auto p-8">
-        <h1 className="text-4xl text-black font-bold mb-8 dark:text-white">
-          About Me.
-        </h1>
+      <main className="flex-1 container mx-auto px-4 pb-8 font-normal">
+        <div className="max-w-4xl mx-auto text-justify">
+          <h1 className="text-4xl text-black font-bold mb-8 dark:text-white">
+            About Me.
+          </h1>
 
-        {sections.map((section, index) => (
-          <AboutSection
-            key={index}
-            title={section.title}
-            content={section.content}
-            link={section.link}
-          />
-        ))}
-      </div>
-      <div className="flex gap-3 max-w-4xl mx-auto p-8">
-        <Link href="/projects" className="hover:underline">
-          Let&apos;s continue to Projects
-        </Link>
-        <Link
-          href="/projects"
-          className="animate-[moveArrow_1s_ease-in-out_infinite]"
-        >
-          <ArrowRight />
-        </Link>
-      </div>
-      <div className="max-w-4xl mx-auto p-8">
-        <Footer />
-      </div>
+          {sections.map((section, index) => (
+            <AboutSection
+              key={index}
+              title={section.title}
+              content={section.content}
+              link={section.link}
+            />
+          ))}
+        </div>
+
+        <div className="flex gap-3 max-w-4xl mx-auto mt-8">
+          <Link href="/projects" className="hover:underline pl-4">
+            Let&apos;s continue to projects
+          </Link>
+          <Link
+            href="/projects"
+            className="animate-[moveArrow_1s_ease-in-out_infinite]"
+          >
+            <ArrowRight />
+          </Link>
+        </div>
+
+        <div className="max-w-4xl mx-auto mt-6 pl-4">
+          <Footer />
+        </div>
+      </main>
     </div>
   );
 };
-
 export default page;

@@ -8,9 +8,9 @@ const text = () => {
       creating impactful{" "}
       <Link
         href="/projects"
-        className="font-bold text-black hover:underline underline-offset-2"
+        className="font-bold dark:text-gray-400 hover:underline underline-offset-2"
       >
-        SOLUTIONS
+        DIGITAL SOLUTIONS
       </Link>{" "}
       that solve real-world problems. I combine technical expertise with strong
       collaborative skills to build innovative applications. Driven by
@@ -19,7 +19,7 @@ const text = () => {
       Beyond coding, I&apos;m a passionate videographer creating compelling {" "}
       <Link
         href="https://www.instagram.com/noella_promise/?hl=en"
-        className="font-bold text-black hover:underline underline-offset-2"
+        className="font-bold text-black hover:underline underline-offset-2 dark:text-gray-400"
       >
         VISUAL STORIES
       </Link>{" "}

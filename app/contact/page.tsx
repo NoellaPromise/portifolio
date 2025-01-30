@@ -10,19 +10,19 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <div className="space-y-12">
+      <div className="max-w-4xl mx-auto px-4 py-2">
+        <div className="space-y-4">
           <h1 className="text-4xl font-bold text-black dark:text-white">Contact.</h1>
           <p className="dark:text-white">
             Get in touch or email me directly on{" "}
-            <span className="font-medium text-black">
+            <span className="font-medium dark:text-gray-300">
               dushakenoella@gmail.com
             </span>
           </p>
 
           <ContactForm />
         </div>
-        <div className="flex gap-5 max-w-4xl mx-auto px-4 py-16 ">
+        <div className="flex gap-5 max-w-4xl mx-auto px-4 py-12">
           <Link href="/" className="hover:underline">
          Go back home
           </Link>

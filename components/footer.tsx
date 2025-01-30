@@ -6,25 +6,25 @@ const footer = () => {
     <div className="flex gap-12">
       <Link
         href="https://gitlab.com/dushakenoella"
-        className="hover:text-[#182a38] hover:scale-110"
+        className="hover:text-[#182a38] hover:scale-110 dark:hover:text-white"
       >
         <Gitlab />
       </Link>
       <Link
         href="https://github.com/NoellaPromise"
-        className="hover:text-[#182a38] hover:scale-110"
+        className="hover:text-[#182a38] hover:scale-110 dark:hover:text-white"
       >
         <Github />
       </Link>
       <Link
         href="https://www.linkedin.com/in/noella-claire-d-assise-dushakimana/"
-        className="hover:text-[#182a38] hover:scale-110"
+        className="hover:text-[#182a38] hover:scale-110 dark:hover:text-white"
       >
         <Linkedin />
       </Link>
       <Link
         href="https://www.instagram.com/noella_promise/?hl=en"
-        className="hover:text-[#182a38] hover:scale-110"
+        className="hover:text-[#182a38] hover:scale-110 dark:hover:text-white"
       >
         <Instagram />
       </Link>

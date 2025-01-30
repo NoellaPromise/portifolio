@@ -11,7 +11,7 @@ export const FormInput = ({
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 }:any) => {
   const baseClasses =
-    "w-full p-4  rounded-lg border border-gray-200 focus:outline-none focus:border-gray-300 focus:bg-white transition-colors dark:text-black";
+    "w-full p-4  rounded-lg border border-gray-200 focus:outline-none focus:border-gray-300 focus:bg-white transition-colors  dark:bg-gray-800";
 
   return type === "textarea" ? (
     <textarea

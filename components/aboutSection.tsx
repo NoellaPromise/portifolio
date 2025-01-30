@@ -8,18 +8,18 @@ export const AboutSection = ({ title, content, link }: AboutSectionProps) => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className="mb-16">
+    <div className="mb-8">
       <div
         className="flex items-center justify-between mb-4 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full border border-black "></div>
+          <div className="w-3 h-3 rounded-full border border-black dark:border-gray-300 "></div>
           <h2 className="text-xl text-black font-semibold dark:text-white">{title}</h2>
         </div>
         <div className="flex items-center gap-4">
           {link && (
-            <Link href={link.url} className="text-black hover:underline">
+            <Link href={link.url} className="text-black hover:underline dark:text-gray-300">
               {link.text}
             </Link>
           )}
