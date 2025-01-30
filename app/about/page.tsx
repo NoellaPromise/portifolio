@@ -11,7 +11,7 @@ const page = () => {
     <div>
       <Navbar />
       <div className="max-w-4xl mx-auto p-8">
-        <h1 className="text-4xl font-bold mb-8">About Me.</h1>
+        <h1 className="text-4xl text-black font-bold mb-8">About Me.</h1>
 
         {sections.map((section, index) => (
           <AboutSection
