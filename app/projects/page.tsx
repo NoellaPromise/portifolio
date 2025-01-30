@@ -10,7 +10,7 @@ const page = () => {
     <div>
       <Navbar />
       <div className="max-w-4xl mx-auto p-4 mb-6">
-        <h1 className="m-6 text-4xl font-semibold text-black ">Projects.</h1>
+        <h1 className="m-6 text-4xl font-semibold text-blackj dark:text-white ">Projects.</h1>
         <div>
           <ul>
             <li className="flex gap-12 items-center justify-center mb-8">

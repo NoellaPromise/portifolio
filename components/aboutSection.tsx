@@ -15,7 +15,7 @@ export const AboutSection = ({ title, content, link }: AboutSectionProps) => {
       >
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full border border-black "></div>
-          <h2 className="text-xl text-black font-semibold">{title}</h2>
+          <h2 className="text-xl text-black font-semibold dark:text-white">{title}</h2>
         </div>
         <div className="flex items-center gap-4">
           {link && (

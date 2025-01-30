@@ -12,8 +12,8 @@ const ContactPage = () => {
       <Navbar />
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="space-y-12">
-          <h1 className="text-4xl font-bold text-black">Contact.</h1>
-          <p>
+          <h1 className="text-4xl font-bold text-black dark:text-white">Contact.</h1>
+          <p className="dark:text-white">
             Get in touch or email me directly on{" "}
             <span className="font-medium text-black">
               dushakenoella@gmail.com
