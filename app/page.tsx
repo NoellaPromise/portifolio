@@ -6,22 +6,22 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="md:fixed lg:fixed">
-      <main className="relative">
+    <div className="md:fixed lg:fixed min-h-screen">
+      <main className="relative container mx-auto pr-6">
         <NavBar />
         <div className="flex flex-col justify-center md:p-8 lg:p-4 ml-8 lg:ml-72 tracking-wider font-medium">
           <h1 className="font-semibold text-xl md:text-2xl lg:text-4xl p-4 mb-2 md:mb-4 lg:mb-8 text-secondary-light animate-pulse duration-[3000ms] hover:animate-none dark:text-white">
             AM NOELLA CLAIRE D&apos;ASSISE DUSHAKIMANA
           </h1>
-          <div className="mb-3 p-2 md:mb-8 lg:mb-10 w-full lg:w-4/5 leading-loose ">
+          <div className="mb-3  md:mb-8 lg:mb-10 w-full lg:w-4/5 leading-loose dark:font-light text-justify ">
             <Text />
           </div>
           <div className="flex gap-3">
             <Link
               href="/about"
-              className="mb-4 md:mb-12 lg:mb-12 hover:underline "
+              className="mb-4 md:mb-12 lg:mb-12 hover:underline"
             >
-              See More About Me
+              See more about me
             </Link>
             <Link
               href="/about"

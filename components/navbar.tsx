@@ -1,4 +1,3 @@
-// components/navbar.tsx
 "use client";
 import StarIcon from "@/public/Icons/starIcon";
 import Link from "next/link";
@@ -22,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between m-10 dark:text-white">
+      <nav className="flex justify-between m-6 dark:text-white">
         <Link
           href="/"
           className="hover:scale-110 ml-2 md:ml-8 lg:ml-32 z-50 dark:text-white"
@@ -31,7 +30,6 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-4 z-50">
-         
           <button
             onClick={toggleMenu}
             className="lg:hidden text-gray-900 dark:text-gray-200 focus:outline-none"
@@ -71,7 +69,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
-             <ThemeToggle />
+            <ThemeToggle />
           </div>
         </div>
       </nav>

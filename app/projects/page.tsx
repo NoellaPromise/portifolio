@@ -9,20 +9,20 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-4xl mx-auto p-4 mb-6">
+      <div className="max-w-4xl mx-auto mb-6">
         <h1 className="m-6 text-4xl font-semibold text-blackj dark:text-white ">Projects.</h1>
         <div>
           <ul>
             <li className="flex gap-12 items-center justify-center mb-8">
               <Link
                 href="/projects"
-                className="hover:scale-110 hover:underline underline-offset-4  hover:font-bold"
+                className="hover:scale-110 hover:underline underline-offset-4  hover:font-bold underline font-semibold"
               >
                 Projects
               </Link>
               <Link
                 href="https://www.instagram.com/noella_promise/?hl=en"
-                className="hover:scale-110 hover:underline underline-offset-4 hover:font-bold"
+                className="hover:scale-110  hover:font-bold"
               >
                 Videos
               </Link>
@@ -44,7 +44,7 @@ const page = () => {
       </div>
       <div className="flex gap-3 max-w-4xl mx-auto p-8 ">
         <Link href="/resume" className="hover:underline">
-          Let&apos;s go To my Resume
+          Let&apos;s go to my resume
         </Link>
         <Link
           href="/projects"

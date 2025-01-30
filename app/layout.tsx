@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.variable} antialiased relative min-h-screen font-poppins font-medium text-primary-light dark:text-white dark:bg-[#182a38]`}
+        className={`${poppins.variable} antialiased relative min-h-screen font-poppins font-medium text-primary-light dark:text-white dark:bg-[#182a38] dark:font-light`}
       >
         <Providers>
           <div className="fixed inset-0 -z-10">
