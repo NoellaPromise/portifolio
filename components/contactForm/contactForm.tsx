@@ -67,7 +67,7 @@ export const ContactForm = () => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="px-8 py-4 bg-black dark:bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+        className="px-8 py-4 bg-black dark:bg-gray-600 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
       >
         Send Message
         <Send size={20} />
