@@ -1,9 +1,11 @@
+// components/navbar.tsx
 "use client";
 import StarIcon from "@/public/Icons/starIcon";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./theme-toggle";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -20,25 +22,28 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between m-10">
+      <nav className="flex justify-between m-10 dark:text-white">
         <Link
           href="/"
-          className="hover:text-[#182a38] hover:scale-110 ml-2 md:ml-8 lg:ml-32 z-50"
+          className="hover:text-[#182a38] dark:hover:text-gray-300 hover:scale-110 ml-2 md:ml-8 lg:ml-32 z-50 dark:text-white"
         >
           <StarIcon />
         </Link>
 
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden text-gray-900 focus:outline-none z-50"
-        >
-          <Menu size={32} />
-        </button>
+        <div className="flex items-center gap-4 z-50">
+         
+          <button
+            onClick={toggleMenu}
+            className="lg:hidden text-gray-900 dark:text-gray-200 focus:outline-none"
+          >
+            <Menu size={32} />
+          </button>
+        </div>
 
         <div
           className={`fixed lg:relative top-0 left-0 w-full h-screen lg:h-auto
-          flex flex-col lg:flex-row items-center justify-center
-           bg-white lg:bg-transparent lg:w-auto
+          flex flex-col lg:flex-row items-center justify-center 
+          bg-white dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent lg:w-auto
           transition-transform duration-300 ease-in-out
           lg:flex lg:justify-end lg:mr-28 lg:gap-8
           ${
@@ -55,9 +60,9 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`hover:text-black ${
+                  className={`hover:text-black dark:hover:underline underline-offset-8 dark:text-white ${
                     pathname === link.href
-                      ? "text-black font-bold underline underline-offset-4"
+                      ? "text-black dark:text-white font-bold underline underline-offset-4"
                       : "font-medium text-primary-light"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
@@ -66,6 +71,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
+             <ThemeToggle />
           </div>
         </div>
       </nav>
