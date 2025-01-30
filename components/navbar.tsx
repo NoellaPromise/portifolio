@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className="flex justify-between m-10 dark:text-white">
         <Link
           href="/"
-          className="hover:text-[#182a38] dark:hover:text-gray-300 hover:scale-110 ml-2 md:ml-8 lg:ml-32 z-50 dark:text-white"
+          className="hover:scale-110 ml-2 md:ml-8 lg:ml-32 z-50 dark:text-white"
         >
           <StarIcon />
         </Link>
