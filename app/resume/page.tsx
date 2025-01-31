@@ -11,24 +11,27 @@ const ResumePage = () => {
     <>
       <Navbar />
       <div className="max-w-4xl mx-auto px-4 py-4">
-        <h1 className="text-4xl  text-black font-bold mb-8">Resumé.</h1>
+        <h1 className="text-4xl text-gray-400 font-bold mb-8">Resumé.</h1>
 
         <p className="mb-8">
           Reach out to me via my{" "}
-          <Link href="/contact" className="text-black font-medium">
+          <Link
+            href="/contact"
+            className="text-gray-400 hover:underline underline-offset-4 font-medium"
+          >
             contact page
           </Link>{" "}
           ·{" "}
           <button
             onClick={() => window.open("/resume.pdf", "_blank")}
-            className="text-black font-medium"
+            className="text-gray-400 hover:underline underline-offset-4 font-medium"
           >
             View
           </button>{" "}
           or{" "}
           <button
             onClick={() => window.open("/resume.pdf", "_blank")}
-            className="text-black font-medium"
+            className="text-gray-400 hover:underline underline-offset-4 font-medium"
           >
             download
           </button>{" "}
