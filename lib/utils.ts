@@ -1,6 +1,12 @@
 import Monishare from "@/public/Images/monishare.png";
 import Iskip from "@/public/Images/iskipproject.png";
 import Meit from "@/public/Images/meit.png";
+import Ojemba from "@/public/Images/ojemba.png";
+import Edge from "@/public/Images/edge.png";
+import Edigen from "@/public/Images/edigen.png";
+import Yali from "@/public/Images/yali.png";
+import ThousandHills from "@/public/Images/thousandhills.png";
+import TodoApp from "@/public/Images/todos.png";
 export const sections = [
   {
     title: "Engineering",
@@ -47,4 +53,52 @@ export const projectsData = [
       "Meit is an application that helps hospitals manage their medical equipments",
     technologies: ["React Native", "Typescript", "PHP"],
   },
+  {
+    image: ThousandHills,
+    link: "https://one-thousand-hills.onrender.com/",
+    title: "Thousand Hills View collection",
+    description:
+      "Thousand Hills view collection helps you easily get the touristic places in Rwanda",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: Ojemba,
+    link: "https://leafy-horse-e93b78.netlify.app/",
+    title: "Ojemba",
+    description:
+      "This is the Ojemba official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: TodoApp,
+    link: "https://deploy-preview-1--kaleidoscopic-daifuku-e1b655.netlify.app/",
+    title: "Todo-App",
+    description:
+      "This is application that helps you plan your different activities and show you how you were able to work through them",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: Edge,
+    link: "https://phenomenal-alpaca-bff174.netlify.app/",
+    title: "Edge",
+    description:
+      "This is the clone of Edge official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: Edigen,
+    link: "https://edigenrwanda.org/",
+    title: "Edge",
+    description:
+      "This is the Edified generation's official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: Yali,
+    link: "https://yalirwandachapter.org/",
+    title: "Yali Rwanda",
+    description:
+      "This is the Yali's official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  }
 ];
