@@ -1,6 +1,17 @@
 "use client";
 import React from "react";
 
+interface FormInputProps {
+  type?: "text" | "email" | "textarea";
+  name: string;
+  value: string;
+  onChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+  placeholder?: string;
+  rows?: number;
+}
+
 export const FormInput = ({
   type = "text",
   name,
@@ -8,10 +19,9 @@ export const FormInput = ({
   onChange,
   placeholder,
   rows,
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-}:any) => {
+}: FormInputProps) => {
   const baseClasses =
-    "w-full p-4  rounded-lg border border-gray-200 focus:outline-none focus:border-gray-300 focus:bg-white transition-colors  dark:bg-gray-800";
+    "w-full p-4 rounded-lg border border-gray-200 focus:outline-none focus:border-gray-300 focus:bg-white transition-colors dark:bg-gray-800";
 
   return type === "textarea" ? (
     <textarea

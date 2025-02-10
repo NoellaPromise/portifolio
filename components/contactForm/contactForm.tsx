@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Send } from "lucide-react";
 import { FormInput } from "@/components/contactForm/formInput";
+import emailjs from "@emailjs/browser";
 
 const INITIAL_FORM_STATE = {
   name: "",
@@ -13,7 +14,7 @@ export const ContactForm = () => {
   const [formData, setFormData] = useState(INITIAL_FORM_STATE);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: { target: { name: string; value: string; }; }) => {
+  const handleChange = (e: { target: { name: string; value: string}}) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -21,15 +22,22 @@ export const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const serviceID = "service_fdmi5jl";
+    const templateID = "template_ijrdq2v";
+    const userID = "n3uTh1bFyMkI-n4a-";
+
     try {
+      emailjs.send(serviceID, templateID, formData, userID);
+
       setFormData(INITIAL_FORM_STATE);
+
       alert("Message sent successfully!");
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
+      console.error("Failed to send email:", error);
       alert("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
