@@ -36,7 +36,7 @@ export const projectsData = [
     title: "Monishare",
     description:
       "Monishare is a mobile application that helps you get the nearest car so that you may rent it.",
-    technologies: ["React", "Typescript", "TailwindCSS"],
+    technologies: ["React", "Typescript", "TailwindCSS","NestJS"],
   },
   {
     image: Iskip,
