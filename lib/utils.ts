@@ -32,7 +32,7 @@ export const sections = [
 export const projectsData = [
   {
     image: Monishare,
-    link: "http://staging.violet.monishare.ojemba.s3-website.eu-central-1.amazonaws.com/",
+    link: "http://staging.red.car.ojemba.s3-website.eu-central-1.amazonaws.com/",
     title: "Monishare",
     description:
       "Monishare is a mobile application that helps you get the nearest car so that you may rent it.",
