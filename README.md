@@ -1,7 +1,7 @@
 
 # Personal Portfolio
 
-This is my A modern, responsive portfolio website built with Next.js, Tailwind CSS, and TypeScript. This project showcases my skills, projects, resume, and contact information.
+This is my modern, responsive portfolio website built with Next.js, Tailwind CSS, and TypeScript. This project showcases my skills, projects, resume, and contact information.
 
 ## Features
 
