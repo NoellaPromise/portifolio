@@ -1,3 +1,5 @@
+import GrantHive from "@/public/Images/granthive.png";
+import FoodWagen from "@/public/Images/foodwagen (2).png";
 import Monishare from "@/public/Images/monishare.png";
 import Iskip from "@/public/Images/iskipproject.png";
 import Meit from "@/public/Images/meit.png";
@@ -17,8 +19,8 @@ export const sections = [
       url: "https://github.com/NoellaPromise",
     },
   },
-  
-{
+
+  {
     title: "Videography",
     content:
       "My creative journey extends beyond code into the world of visual storytelling. As a videographer, I specialize in both indoor and outdoor productions, bringing stories to life through the lens. Each project is an opportunity to create compelling narratives, whether it's a intimate indoor shoot or a dynamic outdoor scene.",
@@ -31,12 +33,20 @@ export const sections = [
 
 export const projectsData = [
   {
-    image: Monishare,
-    link: "http://staging.red.car.ojemba.s3-website.eu-central-1.amazonaws.com/",
-    title: "Monishare",
+    image: GrantHive,
+    link: "http://172.19.64.1:3000/",
+    title: "GrantHive",
     description:
-      "Monishare is a mobile application that helps you get the nearest car so that you may rent it.",
-    technologies: ["React", "Typescript", "TailwindCSS","NestJS"],
+      "GrantHive is a web application that helps NGOs find and apply for grants easily.",
+    technologies: ["NextJs", "Typescript", "TailwindCSS", "supabase"],
+  },
+  {
+    image: FoodWagen,
+    link: "https://food-wagen-site-eosin.vercel.app/",
+    title: "Food Wagen",
+    description:
+      "Food Wagen is a food delivery application that helps you get your favorite meals delivered to your doorstep.",
+    technologies: ["NextJs", "Typescript", "TailwindCSS"],
   },
   {
     image: Iskip,
@@ -44,14 +54,6 @@ export const projectsData = [
     title: "I-skip",
     description: "I-skip is a platform that makes your online shopping easier",
     technologies: ["NextJs", "Typescript", "TailwindCSS", "Strapi"],
-  },
-  {
-    image: Meit,
-    link: "https://frontend-legacy.meit.de/Home",
-    title: "Meit",
-    description:
-      "Meit is an application that helps hospitals manage their medical equipments",
-    technologies: ["React Native", "Typescript", "PHP"],
   },
   {
     image: ThousandHills,
@@ -62,11 +64,49 @@ export const projectsData = [
     technologies: ["React", "Typescript", "Tailwind css"],
   },
   {
+    image: Monishare,
+    link: "http://staging.red.car.ojemba.s3-website.eu-central-1.amazonaws.com/",
+    title: "Monishare",
+    description:
+      "Monishare is a mobile application that helps you get the nearest car so that you may rent it.",
+    technologies: ["React", "Typescript", "TailwindCSS", "NestJS"],
+  },
+
+  {
+    image: Meit,
+    link: "https://frontend-legacy.meit.de/Home",
+    title: "Meit",
+    description:
+      "Meit is an application that helps hospitals manage their medical equipments",
+    technologies: ["React Native", "Typescript", "PHP"],
+  },
+  {
+    image: Edigen,
+    link: "https://edigenrwanda.org/",
+    title: "Edge",
+    description: "This is the Edified generation's official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: Yali,
+    link: "https://yalirwandachapter.org/",
+    title: "Yali Rwanda",
+    description: "This is the Yali's official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+
+  {
     image: Ojemba,
     link: "https://leafy-horse-e93b78.netlify.app/",
     title: "Ojemba",
-    description:
-      "This is the Ojemba official website",
+    description: "This is the Ojemba official website",
+    technologies: ["React", "Typescript", "Tailwind css"],
+  },
+  {
+    image: Edge,
+    link: "https://phenomenal-alpaca-bff174.netlify.app/",
+    title: "Edge",
+    description: "This is the clone of Edge official website",
     technologies: ["React", "Typescript", "Tailwind css"],
   },
   {
@@ -77,28 +117,4 @@ export const projectsData = [
       "This is application that helps you plan your different activities and show you how you were able to work through them",
     technologies: ["React", "Typescript", "Tailwind css"],
   },
-  {
-    image: Edge,
-    link: "https://phenomenal-alpaca-bff174.netlify.app/",
-    title: "Edge",
-    description:
-      "This is the clone of Edge official website",
-    technologies: ["React", "Typescript", "Tailwind css"],
-  },
-  {
-    image: Edigen,
-    link: "https://edigenrwanda.org/",
-    title: "Edge",
-    description:
-      "This is the Edified generation's official website",
-    technologies: ["React", "Typescript", "Tailwind css"],
-  },
-  {
-    image: Yali,
-    link: "https://yalirwandachapter.org/",
-    title: "Yali Rwanda",
-    description:
-      "This is the Yali's official website",
-    technologies: ["React", "Typescript", "Tailwind css"],
-  }
 ];
